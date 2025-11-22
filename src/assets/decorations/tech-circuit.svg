@@ -1,0 +1,29 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#10B981" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#34D399" stop-opacity="1"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 电路路径 1 -->
+  <path d="M10 100 H 100 L 120 120 H 290" stroke="#064E3B" stroke-width="1" />
+  <path d="M10 100 H 100 L 120 120 H 290" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="100 400" stroke-dashoffset="400">
+    <animate attributeName="stroke-dashoffset" from="500" to="-500" duration="3s" repeatCount="indefinite" />
+  </path>
+
+  <!-- 电路路径 2 (反向) -->
+  <path d="M290 80 H 180 L 160 60 H 10" stroke="#064E3B" stroke-width="1" />
+  <path d="M290 80 H 180 L 160 60 H 10" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="100 400" stroke-dashoffset="400">
+    <animate attributeName="stroke-dashoffset" from="-500" to="500" duration="4s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- 节点闪烁 -->
+  <circle cx="120" cy="120" r="3" fill="#10B981">
+    <animate attributeName="opacity" values="0.2;1;0.2" duration="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="160" cy="60" r="3" fill="#10B981">
+    <animate attributeName="opacity" values="0.2;1;0.2" duration="2s" begin="1s" repeatCount="indefinite" />
+  </circle>
+</svg>

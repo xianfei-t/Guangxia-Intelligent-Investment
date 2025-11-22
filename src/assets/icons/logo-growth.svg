@@ -1,0 +1,42 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradTop" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="gradLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="gradRight" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1E40AF"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="url(#bgGradient)" />
+
+  <g filter="url(#dropShadow)">
+    <!-- Bar 1 -->
+    <path d="M12 40 L22 35 L32 40 L22 45 Z" fill="url(#gradTop)" fill-opacity="0.9"/>
+    <path d="M12 40 L22 45 V54 L12 49 Z" fill="url(#gradLeft)"/>
+    <path d="M22 45 L32 40 V49 L22 54 Z" fill="url(#gradRight)"/>
+
+    <!-- Bar 2 -->
+    <path d="M24 30 L34 25 L44 30 L34 35 Z" fill="url(#gradTop)" fill-opacity="0.95"/>
+    <path d="M24 30 L34 35 V54 L24 49 Z" fill="url(#gradLeft)"/>
+    <path d="M34 35 L44 30 V49 L34 54 Z" fill="url(#gradRight)"/>
+
+    <!-- Bar 3 -->
+    <path d="M36 20 L46 15 L56 20 L46 25 Z" fill="url(#gradTop)"/>
+    <path d="M36 20 L46 25 V54 L36 49 Z" fill="url(#gradLeft)"/>
+    <path d="M46 25 L56 20 V49 L46 54 Z" fill="url(#gradRight)"/>
+  </g>
+</svg>

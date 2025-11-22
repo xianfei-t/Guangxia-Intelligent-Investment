@@ -1,0 +1,7 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 四角星芒 -->
+  <path d="M20 0 L23 17 L40 20 L23 23 L20 40 L17 23 L0 20 L17 17 Z" fill="#F59E0B">
+    <animate attributeName="transform" attributeType="XML" type="scale" values="0.8;1.2;0.8" dur="2s" repeatCount="indefinite" additive="sum" transform-origin="center"/>
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+  </path>
+</svg>

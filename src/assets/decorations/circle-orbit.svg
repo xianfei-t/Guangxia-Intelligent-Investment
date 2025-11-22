@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+     <linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#38BDF8" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+     </linearGradient>
+  </defs>
+
+  <!-- 外轨道 -->
+  <circle cx="100" cy="100" r="80" stroke="#334155" stroke-width="1" stroke-opacity="0.1" />
+  <!-- 动态圆弧 -->
+  <path d="M100 20 A 80 80 0 0 1 180 100" stroke="url(#orbitGrad)" stroke-width="2" stroke-linecap="round" fill="none">
+    <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="4s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- 中轨道 -->
+  <circle cx="100" cy="100" r="50" stroke="#334155" stroke-width="1" stroke-opacity="0.1" />
+  <!-- 动态圆弧 (反向) -->
+  <path d="M100 150 A 50 50 0 0 1 50 100" stroke="#818CF8" stroke-width="2" stroke-linecap="round" fill="none">
+    <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- 核心呼吸 -->
+  <circle cx="100" cy="100" r="15" fill="#38BDF8" opacity="0.2">
+      <animate attributeName="r" values="15;20;15" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.1;0.2" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="100" cy="100" r="8" fill="#38BDF8">
+  </circle>
+</svg>
